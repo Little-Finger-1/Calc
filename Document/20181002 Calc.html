@@ -1,0 +1,84 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+<title>
+電卓（改）のプログラム
+</title>
+</head>
+
+<body background="../Image/background/back3.png"bgproperties="fixed">
+<font size="2"><font color="white">
+
+'電卓をするプログラム<br>
+Sub 四則計算()<br>
+<br>
+'各代数の定義<br>
+ Dim no01 As Integer<br>
+ Dim no02 As Integer<br>
+ Dim no03 As Integer<br>
+ Dim no04 As Integer<br>
+ Dim no05 As Integer<br>
+ Dim no06 As Integer<br>
+ Dim no07 As Integer<br>
+ Dim no08 As Integer<br>
+ Dim no09 As Integer<br>
+ Dim no10 As Integer<br>
+ Dim no11 As Integer<br>
+ Dim no12 As Double<br>
+ <br>
+'最初のメッセージ<br>
+ comment01 = InputBox("計算方式を選んで下さい" & vbCrLf & "加算なら「1」" & vbCrLf & "減算なら「2」" & vbCrLf & "乗算なら「3」" & vbCrLf & "除算なら「4」を入力してください")<br>
+ <br>
+'1なら足し算<br>
+ If comment01 = 1 Then<br>
+ <br>
+  no01 = InputBox("足したい一つ目の数を入力してください")<br>
+  no02 = InputBox("足したい二つ目の数を入力してください")<br>
+  no03 = no01 + no02<br>
+  <br>
+  Answer01 = MsgBox(no01 & "+" & no02 & "=" & no03 & " ですね ")<br>
+  <br>
+'2なら引き算<br>
+ ElseIf comment01 = 2 Then<br>
+ <br>
+  no04 = InputBox("引かれる数を入力してください")<br>
+  no05 = InputBox("引く数を入力してください")<br>
+  no06 = no04 - no05<br>
+  <br>
+  Answer02 = MsgBox(no04 & "-" & no05 & "=" & no06 & " ですね ")<br>
+  <br>
+'3なら掛け算<br>
+ ElseIf comment01 = 3 Then<br>
+ <br>
+  no07 = InputBox("掛けたい一つ目の数を入力してください")<br>
+  no08 = InputBox("掛けたい二つ目の数を入力してください")<br>
+  no09 = no07 * no08<br>
+  <br>
+  Answer03 = MsgBox(no07 & "*" & no08 & "=" & no09 & " ですね ")<br>
+  <br>
+'4なら割り算<br>
+ ElseIf comment01 = 4 Then<br>
+ <br>
+  no10 = InputBox("割られる数を入力してください")<br>
+  no11 = InputBox("割る数を入力してください")<br>
+  no12 = no10 / no11<br>
+  <br>
+  Answer04 = MsgBox(no10 & "/" & no11 & "=" & no12 & " ですね ")<br>
+  <br>
+'1,2,3,4のいづれかで答えないバカ者用<br>
+ Else<br>
+ <br>
+  MsgBox ("1,2,3,4のいずれかの半角数字で答えてください")<br>
+  <br>
+ End If<br>
+ <br>
+End Sub<br>
+
+<hr color="royalblue">
+
+<iframe allowtransparency="true"src="rink.html"frameborder="0"width="100%"heigth="100">
+サンプル
+</iframe>
+
+</body>
+</html>
